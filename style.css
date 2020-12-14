@@ -58,6 +58,7 @@ a>h1{
     box-shadow: 0px 0px 5px #e74c3c;
 }
 
+
 @media (min-width: 576px){
     .menu{
         border: rgb(205, 151, 50) solid 4px;
