@@ -1,58 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nom association</title>
-    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <h1>Nom de l'association</h1>
-        <strong>slogan de l'association</strong>
-        <nav>
-            <ul>
-                <li><a href="#">menu 1</a></li>
-                <li><a href="#">menu 2</a></li>
-                <li><a href="#">menu 3</a></li>
-                <li><a href="#">menu 4</a></li>
-            </ul>
-        </nav>
-
-        <ul id="breadcrumb">
-            <li><a href="">Lorem ipsum</a></li>
-            <li><a href="">Vivamus nisi eros</a></li>
-            <li><a href="">Nulla sed lorem risus</a></li>
-            <li><a href="">Nam iaculis commodo</a></li>
-            <li><a href="" class="current">Current crumb</a></li>
-        </ul>
-
+        <div class="container-fluid">
+            <div class="row title">
+                <div class="col">
+                    <a href="#"><h1 class="h6">Secour des Animaux en Detresse</h1></a>
+                </div>
+            </div>
+            <div class="row align-items-end menu">
+                <div class="col">
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><svg class="menu-icon" width="1em" height="40px" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 
+                            1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg></a>
+                        <a href="#"><svg class="search-icon" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-separator"></div>
     </header>
 
-    <content>
-
-        <main>
-            <img src="Images/160211_bq4fr_lc-animaux_chien_chat_sn635.jpeg" alt="Image montrant plusieurs chiens et chats alignés">
-            <h2>Qui sommes-nous ?</h2>
-            <p>Description de l'association, son histoire, son ambition, quelques chiffres ?</p>
-        <article>
-            <h2>Le dernier evenement en date</h2>
-            <p>Description et résumé du dernier evenement de l'association, ses resultats, quelques photos ?</p>
-        </article>
-        </main>
-        <aside>
-            <H2>Ou nous trouvez ?</H2>
-            <article>Adresse des differentes presences ...</article>
-        </aside>
-    </content>
-    <footer>
-        <p>Faire un don</p>
-        <ul>
-            <li>Contact</li>
-            <li>plan du site</li>
-            <li>mentions legales</li>
-        </ul>
-    </footer>
 </body>
 </html>
