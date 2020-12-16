@@ -6,7 +6,7 @@
 
 html,
 body,
-.col{
+cont{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -19,6 +19,9 @@ body,
 }
 
 */
+body{
+    background-image: url(../Project-1/Images/vector-graphic-design-13.jpg);
+}
 
 .menu{
     /* border: yellowgreen solid 1px; */
@@ -30,14 +33,13 @@ body,
 }
 
 .menu-icon, .search-icon{
-    margin: 0.5rem;
-    margin-top: 5.6em;
+    margin-bottom: -0.1rem;
     padding: 0.2rem;
     border-radius: 5px;
     width: 40px;
     height: 40px;
-    color: white;
-    background-image: url(../Project-1/Images/444-red-floral-ornament-background-design.jpeg);
+    color: black;
+    background-color: white;
     box-shadow: 0px 0px 5px #e74c3c;
 }
 
@@ -48,20 +50,15 @@ body,
     border-bottom: #e74c3c solid 2px;
 }
 
-.border-separator-2{
-    border-bottom: rgb(184, 181, 181) 2px solid;
-    width: 70%;
-    margin: auto;
-    
-}
-
 a>h1{
     color: white;
-    background-image: url(../Project-1/Images/444-red-floral-ornament-background-design.jpeg);
+    background-image: 
+    linear-gradient(white)
+    url(../Project-1/Images/444-red-floral-ornament-background-design.jpeg);
     font-family: 'Fredoka One', cursive;
     text-align: center;
     padding: 0.5rem;
-    margin: 1rem;
+    margin-top: 1rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #e74c3c;
 }
@@ -83,18 +80,19 @@ a>h1{
 
 .iconCare{
     color: #e74c3c;
-    margin-right: 1rem;
 }
 
 .who-we-are{
-    margin: 0.5rem;
-    max-height: 20rem;
+    max-height: 12rem;
+    overflow: scroll;
+    color: black;
+    background-color: white;
+    background-size: cover;
+    background-position: bottom;
     border-radius: 5px;
-    color: white;
-    background:  #e74c3c;
+    box-shadow: 0px 0px 5px #e74c3c;
+    margin: 0.5rem;
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .suite-1{
@@ -109,33 +107,23 @@ a>h1{
 
 
 .donation-text{
-    text-align: center;
-    max-height: 15rem;
-    color: #e74c3c;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
-.content-donation{
-    padding-top: 1rem;
-}
-
-.event{
     overflow: scroll;
     max-height: 13rem;
     color: #e74c3c;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #e74c3c;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding: 1rem;
 }
+
 
 .give-donation>img{
     display: none;
 }
-
 
 .go{
     margin-left: 1rem;
@@ -149,12 +137,7 @@ a>h1{
 .donation-text>h3{
     border-bottom: #e74c3c 2px solid;
     font-weight: bold;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-}
-
-.event{
-
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 360px){
