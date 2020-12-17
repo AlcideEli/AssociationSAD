@@ -167,6 +167,7 @@ body,
     padding: 1rem;
 }
 
+
 .content-donation{
     padding-top: 1rem;
 }
@@ -182,8 +183,33 @@ body,
     padding: 1rem;
 }
 
-.give-donation>img{
+.give-donation>.img-cat{
     display: none;
+}
+
+.icon-cat
+{
+    position: absolute;
+    z-index: -1;
+    top: 0.9rem;
+    right: 2rem;
+    max-width: 3rem;
+}
+
+.icon-cat>img{
+    width: 100%;
+}
+
+.icon-dog{
+    position: absolute;
+    max-width: 4rem;
+    top: 2.3rem;
+    right: 2rem;
+
+}
+
+.icon-dog>img{
+    width: 100%;
 }
 
 
@@ -196,11 +222,22 @@ body,
     color:  #e74c3c;
 }
 
-.donation-text>h3{
-    border-bottom: #e74c3c 2px solid;
+.donation-text>h2,
+.who-we-are>h2{
+    position: relative;
+    z-index: 1;
     font-weight: bold;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
+    text-align: left;
+}
+
+.donation-text>h2{
+    border-bottom: #e74c3c 2px solid;
+}
+
+.who-we-are>h2{
+    border-bottom: white 2px solid;
 }
 
 
@@ -279,7 +316,7 @@ body,
 
     #wrapper li:hover ul {
         text-align: center;
-        transition: all ease-out 0.5s;
+        transition: all ease-out 0.2s;
         display: block;
         position: absolute;
         z-index: 100;
@@ -309,10 +346,6 @@ body,
         text-decoration: none;
         font-weight: bold;
     }
-
-
-
-
 }
 
 
