@@ -71,6 +71,7 @@ body{
 }
 
 .search-button{
+    transition: all 500ms;
     justify-content: center;
     height: 30px;
     border-radius: 5px;
@@ -174,17 +175,6 @@ body{
     padding-top: 1rem;
 }
 
-.event{
-    overflow: scroll;
-    max-height: 13rem;
-    color: #e74c3c;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #e74c3c;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
 .give-donation>.img-cat{
     display: none;
 }
@@ -216,16 +206,19 @@ body{
 
 
 .go{
+    transition: all 500ms;
     margin-left: 1rem;
     color: #e74c3c;
 }
 
 .go:hover{
-    color:  #e74c3c;
+    color: rgb(85, 163, 7);
+    transition: all 500ms;
 }
 
 .donation-text>h2,
-.who-we-are>h2{
+.who-we-are>h2,
+.event>h2{
     position: relative;
     font-weight: bold;
     padding-bottom: 2rem;
@@ -241,31 +234,72 @@ body{
     border-bottom: white 2px solid;
 }
 
-.discovery{
+.discovery,
+.event_row{
     margin-top: 2rem;
     min-height: auto;
-    box-shadow: grey 0px 0px 8px;
+    box-shadow: black 0px 0px 8px;
+    text-align: center;
 }
 
-.discover-us h2{
+.discover-us h2,
+.event-col h2{
     position: absolute;
     margin-top: 1rem;
     color: white;
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
-.discover-us>article{
+.event-col h2{
+    align-self: flex-end;
+}
+
+.event-col h2 a{
+    transition: all 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.event-col h2 a:hover{
+    transition: all 0.5s;
+    font-size: 2rem;
+}
+
+.discover-us>article,
+.event-col>article{
     display: flex;
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
 }
 
-.discover-us img{
+.event article{
+    display: flex;
+}
+
+.discover-us img,
+.event img{
 max-width: 100%;
 min-width: 100%;
 }
 
+.event img{
+    border-radius: 5px;
+    box-shadow:black 0px 0px 8px;
+}
+
+.event{
+    border-radius: 10px;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    text-align: center;
+}
+
+.event p{
+    margin-top: 0.5rem;
+    position: absolute;
+    color: white;
+}
 
 @media(max-width: 312px){
     .icon-dog{
@@ -294,7 +328,7 @@ min-width: 100%;
     }
 
    .main{
-       margin-bottom: 5rem;
+       margin-bottom: 1rem;
    }
 
     .navig{
