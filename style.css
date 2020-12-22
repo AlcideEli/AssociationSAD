@@ -56,7 +56,7 @@ body{
     justify-items: end;
     margin-right: 0;
     min-width: 5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     flex-wrap: wrap;
     padding: 0.5rem;    
 }
@@ -148,8 +148,8 @@ body{
     color: white;
     background:  #e74c3c;
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .suite-1{
@@ -197,7 +197,7 @@ body{
 .icon-dog{
     position: absolute;
     max-width: 4rem;
-    top: 2.2rem;
+    top: 3.2rem;
     right: 2rem;
 
 }
@@ -238,7 +238,7 @@ body{
 
 .discovery,
 .event_row{
-    margin-top: 2rem;
+    margin-top: 3rem;
     min-height: auto;
     box-shadow: black 0px 0px 8px;
     text-align: center;
@@ -304,10 +304,70 @@ min-width: 100%;
 }
 
 .newsletter{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
+
+.footer-1{
+    background-color: black;
+    margin-top: 3rem;
+}
+
+.row-footer{
+    padding-top: 1rem;
+}
+
+
+.logo p{
+    text-align: center;
+    width: 8rem;
+    color: white;
+    margin: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social svg{
+    margin: 0.5rem;
+    color: white;
+}
+
+
+.social{
+    align-content: end;
+}
+
+.mention{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.mention li{
+    padding: 0.2rem;
+}
+
+.mention li a{
+    color: white;
+}
+
+.mention li a:hover{
+    text-decoration: none;
+}
+
+.separator{
+    color: white;
+}
+
 
 
 
@@ -447,34 +507,10 @@ min-width: 100%;
     }
 
     .footer-1{
-        background-color: black;
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: 2.7rem;
     }
     
-    
-    .logo p{
-        text-align: center;
-        width: 8rem;
-        color: white;
-        margin: 0;
-    }
-    
-    .social{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .social svg{
-        margin: 0.5rem;
-        color: white;
-    }
-    
-
-    .social{
-        align-content: end;
-    }
-
 
 }
 
