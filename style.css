@@ -129,17 +129,6 @@ body{
     padding-bottom: 1rem;
 }
 
-.iconCare, .iconInfo{
-    float: right;
-}
-
-.iconInfo{
-    color: white;
-}
-
-.iconCare{
-    color: #e74c3c;
-}
 
 .who-we-are{
     margin: 0.5rem;
@@ -344,7 +333,7 @@ min-width: 100%;
 .mention{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     font-size: 0.8rem;
     margin-top: 1rem;
@@ -353,7 +342,7 @@ min-width: 100%;
 }
 
 .mention li{
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 .mention li a{
@@ -365,6 +354,7 @@ min-width: 100%;
 }
 
 .separator{
+    align-self: center;
     color: white;
 }
 
