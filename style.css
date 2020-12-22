@@ -3,7 +3,9 @@
 html,
 body,
 .title,
-.menu2{
+.menu2,
+.logo,
+.social{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -301,6 +303,14 @@ min-width: 100%;
     color: white;
 }
 
+.newsletter{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
 @media(max-width: 312px){
     .icon-dog{
         display: none;
@@ -354,7 +364,7 @@ min-width: 100%;
         margin-right:0.5rem;
     }
 
-    .footer{
+    .footer-2{
         position: fixed;
         bottom: 0;
         padding: 0;
@@ -434,9 +444,38 @@ min-width: 100%;
         transition: all 0.35s;
         text-decoration: none;
         font-weight: bold;
-        
-
     }
+
+    .footer-1{
+        background-color: black;
+        margin-top: 2rem;
+        margin-bottom: 2.7rem;
+    }
+    
+    
+    .logo p{
+        text-align: center;
+        width: 8rem;
+        color: white;
+        margin: 0;
+    }
+    
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social svg{
+        margin: 0.5rem;
+        color: white;
+    }
+    
+
+    .social{
+        align-content: end;
+    }
+
+
 }
 
 
