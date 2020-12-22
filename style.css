@@ -68,7 +68,6 @@ body{
 .search-bar{
     height: 30px;
     max-width: 10rem;
-    min-width: 5rem;
     margin-right: 0.5rem;
 }
 
@@ -298,6 +297,10 @@ min-width: 100%;
     text-align: center;
 }
 
+.newsletter h3{
+    margin-bottom: 2rem;
+}
+
 .footer-1{
     background-color: black;
     margin-top: 3rem;
@@ -367,13 +370,9 @@ min-width: 100%;
     }
 }
 
-@media (max-width: 360px){
-    .iconInfo, .iconCare{
-        width: 1.5rem;
-    }
-}
 
 @media (max-width: 450px){
+
 
     body{
         position: relative;
@@ -407,6 +406,7 @@ min-width: 100%;
     .search-menu{
         display: flex;
         margin: 0;
+        margin-top: 2rem;
     }
 
     .search-bar{
@@ -509,4 +509,43 @@ min-width: 100%;
     h1{
         color: black;
     }
+    .search-bar{
+        min-width: 10rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .main,
+    .header{
+        width: 70%;
+    }
+
+    .header{
+        margin: auto;
+        box-shadow: none;
+    }
+
+    .breadcrumb-item{
+        margin-left: 15%;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .main,
+    .header{
+        width: 50%;
+    }
+
+    .title{
+        margin-top: 1rem;
+    }
+
+
+    .breadcrumb-item{
+        margin-left: 25%;
+    }
+
 }

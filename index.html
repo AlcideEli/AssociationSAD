@@ -11,11 +11,11 @@
     <body>
         <header>
             <div class="container-fluid header-container">
-                <div class="row header ">
+                <div class="row justify-content-sm-between header ">
                     <div class="col d-flex justify-content-start title">
                         <a href="#"><h1 class="h6">Secours des Animaux en Détresse</h1></a>
                     </div>
-                    <div class="col d-flex justify-content-end menu">
+                    <div class="col col-sm-2 d-flex justify-content-end menu">
                         <form class="d-flex search-menu">
                             <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
                             <button class="search-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -35,7 +35,11 @@
                 </div>
             </div>
         </header>
-        <div class="breadcrumb">Accueil</div>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            </ol>
+        </nav>
         <main>
             <div class="container-fluid main">
                 <div class="row discovery">
@@ -83,7 +87,7 @@
                             <div class="icon-dog">
                                 <img src="../Project-1/Images/Illustration_sans_titre(1).png" alt="dessin de chien">
                             </div>
-                            <p>La Société protectrice des animaux (SPA) est, historiquement en France, la première des sociétés de protection des animaux, 
+                            <p>Le secours des animaux en détresse (SAD) est, historiquement en France, la première des sociétés de protection des animaux, 
                             qui œuvre dans le domaine de la protection animale [...]<div class="suite-1"><a href="#"><i>Lire la suite</i></a></div></p>
                         </article>
                     </div>
@@ -115,7 +119,7 @@
         <div class="border-separator-2"></div>
         <footer>
             <div class="container-fluid footer-1">
-                <div class="row justify-content-between row-footer">
+                <div class="row justify-content-between row-footer-1">
                     <div class="col logo">
                         <p>Secours des animaux en détresse</p>
                     </div>
@@ -135,7 +139,7 @@
                         </svg></a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row-footer-2">
                     <div class="col footer">
                         <div class="foot-page">
                             <ul class="mention">
