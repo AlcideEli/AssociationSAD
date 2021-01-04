@@ -310,13 +310,10 @@ min-width: 100%;
     padding-top: 1rem;
 }
 
-
-.logo p{
-    text-align: center;
-    width: 8rem;
-    color: white;
-    margin: 0;
+.row-footer-1{
+    padding-top: 0.5rem;
 }
+
 
 .social{
     display: flex;
@@ -326,11 +323,6 @@ min-width: 100%;
 .social svg{
     margin: 0.5rem;
     color: white;
-}
-
-
-.social{
-    align-content: end;
 }
 
 .mention{
@@ -512,6 +504,9 @@ min-width: 100%;
     .search-bar{
         min-width: 10rem;
     }
+    .title{
+        text-align: left;
+    }
 
 }
 
@@ -530,6 +525,10 @@ min-width: 100%;
         margin-left: 15%;
     }
 
+    .title{
+        padding-left: 0;
+    }
+
 
 }
 
@@ -541,6 +540,7 @@ min-width: 100%;
 
     .title{
         margin-top: 1rem;
+        padding-left: 0;
     }
 
 
