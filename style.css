@@ -3,7 +3,9 @@
 html,
 body,
 .title,
-.menu2{
+.menu2,
+.logo,
+.social{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -54,7 +56,7 @@ body{
     justify-items: end;
     margin-right: 0;
     min-width: 5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     flex-wrap: wrap;
     padding: 0.5rem;    
 }
@@ -66,11 +68,11 @@ body{
 .search-bar{
     height: 30px;
     max-width: 10rem;
-    min-width: 5rem;
     margin-right: 0.5rem;
 }
 
 .search-button{
+    transition: all 500ms;
     justify-content: center;
     height: 30px;
     border-radius: 5px;
@@ -126,17 +128,6 @@ body{
     padding-bottom: 1rem;
 }
 
-.iconCare, .iconInfo{
-    float: right;
-}
-
-.iconInfo{
-    color: white;
-}
-
-.iconCare{
-    color: #e74c3c;
-}
 
 .who-we-are{
     margin: 0.5rem;
@@ -145,8 +136,8 @@ body{
     color: white;
     background:  #e74c3c;
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .suite-1{
@@ -174,17 +165,6 @@ body{
     padding-top: 1rem;
 }
 
-.event{
-    overflow: scroll;
-    max-height: 13rem;
-    color: #e74c3c;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #e74c3c;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
 .give-donation>.img-cat{
     display: none;
 }
@@ -205,7 +185,7 @@ body{
 .icon-dog{
     position: absolute;
     max-width: 4rem;
-    top: 2.2rem;
+    top: 3.2rem;
     right: 2rem;
 
 }
@@ -216,16 +196,19 @@ body{
 
 
 .go{
+    transition: all 500ms;
     margin-left: 1rem;
     color: #e74c3c;
 }
 
 .go:hover{
-    color:  #e74c3c;
+    color: rgb(85, 163, 7);
+    transition: all 500ms;
 }
 
 .donation-text>h2,
-.who-we-are>h2{
+.who-we-are>h2,
+.event>h2{
     position: relative;
     font-weight: bold;
     padding-bottom: 2rem;
@@ -241,30 +224,136 @@ body{
     border-bottom: white 2px solid;
 }
 
-.discovery{
-    margin-top: 2rem;
+.discovery,
+.event_row{
+    margin-top: 3rem;
     min-height: auto;
-    box-shadow: grey 0px 0px 8px;
+    box-shadow: black 0px 0px 8px;
+    text-align: center;
 }
 
-.discover-us h2{
+.discover-us h2,
+.event-col h2{
     position: absolute;
     margin-top: 1rem;
     color: white;
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
-.discover-us>article{
+.event-col h2{
+    align-self: flex-end;
+}
+
+.event-col h2 a{
+    transition: all 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.event-col h2 a:hover{
+    transition: all 0.5s;
+    font-size: 2rem;
+}
+
+.discover-us>article,
+.event-col>article{
     display: flex;
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
 }
 
-.discover-us img{
+.event article{
+    display: flex;
+}
+
+.discover-us img,
+.event img{
 max-width: 100%;
 min-width: 100%;
 }
+
+.event img{
+    border-radius: 5px;
+    box-shadow:black 0px 0px 8px;
+}
+
+.event{
+    border-radius: 10px;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    text-align: center;
+}
+
+.event p{
+    margin-top: 0.5rem;
+    position: absolute;
+    color: white;
+}
+
+.newsletter{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.newsletter h3{
+    margin-bottom: 2rem;
+}
+
+.footer-1{
+    background-color: black;
+    margin-top: 3rem;
+}
+
+.row-footer{
+    padding-top: 1rem;
+}
+
+.row-footer-1{
+    padding-top: 0.5rem;
+}
+
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social svg{
+    margin: 0.5rem;
+    color: white;
+}
+
+.mention{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.mention li{
+    padding: 0.5rem;
+}
+
+.mention li a{
+    color: white;
+}
+
+.mention li a:hover{
+    text-decoration: none;
+}
+
+.separator{
+    align-self: center;
+    color: white;
+}
+
+
 
 
 @media(max-width: 312px){
@@ -273,13 +362,9 @@ min-width: 100%;
     }
 }
 
-@media (max-width: 360px){
-    .iconInfo, .iconCare{
-        width: 1.5rem;
-    }
-}
 
 @media (max-width: 450px){
+
 
     body{
         position: relative;
@@ -294,7 +379,7 @@ min-width: 100%;
     }
 
    .main{
-       margin-bottom: 5rem;
+       margin-bottom: 1rem;
    }
 
     .navig{
@@ -313,6 +398,7 @@ min-width: 100%;
     .search-menu{
         display: flex;
         margin: 0;
+        margin-top: 2rem;
     }
 
     .search-bar{
@@ -320,7 +406,7 @@ min-width: 100%;
         margin-right:0.5rem;
     }
 
-    .footer{
+    .footer-2{
         position: fixed;
         bottom: 0;
         padding: 0;
@@ -400,9 +486,14 @@ min-width: 100%;
         transition: all 0.35s;
         text-decoration: none;
         font-weight: bold;
-        
-
     }
+
+    .footer-1{
+        margin-top: 3rem;
+        margin-bottom: 2.7rem;
+    }
+    
+
 }
 
 
@@ -410,4 +501,51 @@ min-width: 100%;
     h1{
         color: black;
     }
+    .search-bar{
+        min-width: 10rem;
+    }
+    .title{
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .main,
+    .header{
+        width: 70%;
+    }
+
+    .header{
+        margin: auto;
+        box-shadow: none;
+    }
+
+    .breadcrumb-item{
+        margin-left: 15%;
+    }
+
+    .title{
+        padding-left: 0;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .main,
+    .header{
+        width: 50%;
+    }
+
+    .title{
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+
+    .breadcrumb-item{
+        margin-left: 25%;
+    }
+
 }

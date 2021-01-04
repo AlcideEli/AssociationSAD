@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+
+.footer-1{
+    background-color: black;
+    margin-top: 3rem;
+}
+
+.row-footer{
+    padding-top: 1rem;
+}
+
+
+.logo p{
+    text-align: center;
+    width: 8rem;
+    color: white;
+    margin: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social svg{
+    margin: 0.5rem;
+    color: white;
+}
+
+
+.social{
+    align-content: end;
+}
+
+.mention{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.mention li{
+    padding: 0.5rem;
+}
+
+.mention li a{
+    color: white;
+}
+
+.mention li a:hover{
+    text-decoration: none;
+}
+
+.separator{
+    align-self: center;
+    color: white;
+}
+
+
+
+@media (max-width: 450px){
+
+    .footer-1{
+        margin-top: 3rem;
+        margin-bottom: 2.7rem;
+    }
+}
