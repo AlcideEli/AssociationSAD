@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="style-event.css">
-        <title>Secours des Animaux en Détresse</title>
-    </head>
-    <body>
-        <header>
-            <div class="container-fluid header-container">
-                <div class="row justify-content-sm-between header ">
-                    <div class="col d-flex justify-content-start title">
-                        <a href="index.html"><h1 class="h6">Secours des Animaux en Détresse</h1></a>
-                    </div>
-                    <div class="col col-sm-2 d-flex justify-content-end menu">
-                        <form class="d-flex search-menu">
-                            <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                            <button class="search-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+
+<head>
+    <meta charset="UTF-8">
+    <meta type="description" content="Evenements relatifs a l'association du secours des animaux en détresse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style-event.css">
+    <title>Secours des Animaux en Détresse</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid header-container">
+            <div class="row justify-content-sm-between header ">
+                <div class="col d-flex justify-content-start title">
+                    <a href="index.html">
+                        <h1 class="h6">Secours des Animaux en Détresse</h1>
+                    </a>
+                </div>
+                <div class="col col-sm-2 d-flex justify-content-end menu">
+                    <form class="d-flex search-menu">
+                        <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                                 <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/></svg>
                             </button>
-                        </form>
-                        <div class="navig">
-                            <ul>
-                                <li><a href="index.html">Accueil</a></li>
-                                <li><a href="#">Galerie</a></li>
-                                <li><a href="event.html">Evenements</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
+                    </form>
+                    <div class="navig">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="#">Galerie</a></li>
+                            <li><a href="event.html">Evenements</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Actus</li>
+        </ol>
+    </nav>
+    <main>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col">
+                    <h2 class="event-title">Nos évenements</h2>
+                    <div class="card">
+                        <img src="../Project-1/Images/animals-in-communities.jpg" class="card-img-top" alt="..." />
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Action sauvetage</h5>
+                            <datetime itemprop="startDate" content="2021-03-21">21/03/2021</datetime>
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><h6 itemprop="addressLocality">Toulouse</h6></span></span>
+                            <p itemprop="description" class="card-text">A travers les rues de Toulouse, nous partirons aux secours des animaux érrants. Notre objectif ? Leur offrir une vie meilleure</p>
+                            <a href="#" class="btn btn-danger">Participer</a>
+                        </div>
+                    </div>
+                    <div class="border-separator-2"></div>
+                    <div class="card">
+                        <img src="../Project-1/Images/world-animal-protection-office.jpg" class="card-img-top" alt="..." />
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Portes ouvertes</h5>
+                            <datetime itemprop="startDate" content="2021-05-15">15/05/2021</datetime>
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><h6 itemprop="addressLocality">Paris</h6></span></span>
+                            <p itemprop="description" class="card-text">Au sein de nos locaux, nous organisons une journée porte ouverte afin de faire adopter un maximum de nos pensionnaires. Leur trouver une nouvelle famille sera l'ojectif de cette journée.</p>
+                            <a href="#" class="btn btn-danger">Participer</a>
+                        </div>
+                    </div>
+                    <div class="border-separator-2"></div>
+                    <div class="card">
+                        <img src="../Project-1/Images/conference.JPG" class="card-img-top" alt="..." />
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Conférence-débat</h5>
+                            <datetime itemprop="startDate" content="2021-07-19">19/07/2021</datetime>
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><h6 itemprop="addressLocality">Rouen</h6></span></span>
+                            <p itemprop="description" class="card-text">Comment améliorer la protection des animaux ? Nous proposons cette conférence-débat afin de trouver les meilleures réponses.</p>
+                            <a href="#" class="btn btn-danger">Participer</a>
+                        </div>
+                    </div>
+                    <div class="border-separator-2"></div>
+                    <div class="card">
+                        <img src="../Project-1/Images/marathon.jpg" class="card-img-top" alt="..." />
+                        <div itemscope itemtype="http://schema.org/Event" class="card-body">
+                            <h5 itemprop="name" class="card-title">Marathon</h5>
+                            <datetime itemprop="startDate" content="2021-10-10">10/10/2021</datetime>
+                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><h6 itemprop="addressLocality">Marseille</h6></span></span>
+                            <p itemprop="description" class="card-text">En partant de la Cannebière, une course de 30km dans les rues de Marseille, des centaines de participants chaques année, saurez-vous relever le défis ? les bénéfices iront à la cause animale</p>
+                            <a href="#" class="btn btn-danger">Participer</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Actus</li>
-            </ol>
-        </nav>
-        <main>
-            <div class="container-fluid header">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="event-title">Nos évenements</h2>
-                        <div class="card">
-                            <img src="../Project-1/Images/animals-in-communities.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Action sauvetage</h5>
-                                <datetime>21/03/2021</datetime>
-                                <p class="card-text"><h6>Toulouse</h6>A travers les rues de Toulouse, nous partirons aux secours des animaux érrants. Notre objectif ? 
-                                Leur offrir une vie meilleure</p>
-                                <a href="#" class="btn btn-danger">Participer</a>
-                            </div>
-                        </div>
-                        <div class="border-separator-2"></div>
-                        <div class="card">
-                            <img src="../Project-1/Images/world-animal-protection-office.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Portes ouvertes</h5>
-                                <datetime>15/05/2021</datetime>
-                                <p class="card-text"><h6>Paris</h6>Au sein de nos locaux, nous organisons une journée porte ouverte afin de faire adopter un maximum de nos pensionnaires. 
-                                Leur trouver une nouvelle famille sera l'ojectif de cette journée.</p>
-                                <a href="#" class="btn btn-danger">Participer</a>
-                            </div>
-                        </div>
-                        <div class="border-separator-2"></div>
-                        <div class="card">
-                            <img src="../Project-1/Images/conference.JPG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Conférence-débat</h5>
-                                <datetime>19/07/2021</datetime>
-                                <p class="card-text"><h6>Rouen</h6>Comment améliorer la protection des animaux ? Nous proposons cette conférence-débat afin de trouver les meilleures réponses.</p>
-                                <a href="#" class="btn btn-danger">Participer</a>
-                            </div>
-                        </div>
-                        <div class="border-separator-2"></div>
-                        <div class="card">
-                            <img src="../Project-1/Images/marathon.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Marathon</h5>
-                                <datetime>10/10/2021</datetime>
-                                <p class="card-text"><h6>Marseille</h6>En partant de la Cannebière, une course de 30km dans les rues de Marseille, des centaines de participants chaques année, saurez-vous 
-                                relever le défis ? les bénéfices iront à la cause animale</p>
-                                <a href="#" class="btn btn-danger">Participer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="container-fluid footer-1">
-                <div class="row justify-content-between row-footer-1">
-                    <div class="col">
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid footer-1">
+            <div class="row justify-content-between row-footer-1">
+                <div class="col">
                     <div class="social">
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -112,46 +122,47 @@
                     </div>
                 </div>
             </div>
-                <div class="row row-footer-2">
-                    <div class="col footer">
-                        <div class="foot-page">
-                            <ul class="mention">
-                                <li><a href="#">Mentions légales</a></li>
-                                <span class="separator">|</span>
-                                <li><a href="#">Plan du site</a></li>
-                                <span class="separator">|</span>
-                                <li><a href="#">Presse</a></li>
-                                <span class="separator">|</span>
-                                <li><a href="#">Appels d'offres</a></li>
-                                <span class="separator">|</span>
-                                <li><a href="#">Actions</a></li>
-                                <span class="separator">|</span>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid footer-2">
-                <div class="row menu2">
-                    <div class="col wrap-col">
-                        <ul id="wrapper">
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 
-                                1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
-                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            </svg></a>
-                                <ul>
-                                    <li><a href="index.html">Accueil</a></li>
-                                    <li><a href="#">Galerie</a></li>
-                                    <li><a href="event.html">Evenements</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </li>
+            <div class="row row-footer-2">
+                <div class="col footer">
+                    <div class="foot-page">
+                        <ul class="mention">
+                            <li><a href="#">Mentions légales</a></li>
+                            <span class="separator">|</span>
+                            <li><a href="#">Plan du site</a></li>
+                            <span class="separator">|</span>
+                            <li><a href="#">Presse</a></li>
+                            <span class="separator">|</span>
+                            <li><a href="#">Appels d'offres</a></li>
+                            <span class="separator">|</span>
+                            <li><a href="#">Actions</a></li>
+                            <span class="separator">|</span>
+                            <li><a href="#">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="container-fluid footer-2">
+            <div class="row menu2">
+                <div class="col wrap-col">
+                    <ul id="wrapper">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 
+                                1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            </svg></a>
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="#">Galerie</a></li>
+                                <li><a href="event.html">Evenements</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
